@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.wrapper {
+  max-width: 1400px;
+  min-width: 831px;
+  height: 95%;
+  margin: 0 auto;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  margin-left: 7%;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 101.38%;
+  color: black;
+}
+
+.maintext {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+  color: black;
+  width: 47%;
+  height: 26%;
+}
+
+.img1 {
+  width: 314px;
+  height: 315px;
+}
+.img2 {
+  width: 232px;
+  height: 203px;
+}
+.imagebox{
+  position:relative;
+}
+.img1,.img2{
+  position: static;
+}
+.shadow1{
+  position: absolute;
+  z-index: -1;
+  bottom: 3px;
+}
+.shadow2{
+  position: absolute;
+  z-index: -1;
+  left:10px;
+}
+
+.boxpar {
+  width: 150px;
+  height: 39px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 130%;
+  color: #000000;
+}
+
+.boxpar2 {
+  width: 150px;
+  height: 39px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  color: black;
+}
+
+@media only screen and (max-width: 830px) {
+  .container {
+    width: 830px;
+  }
+
+  .img2 {
+    display: none;
+  }
+  .flex2 {
+    justify-content: flex-start;
+    padding-left: 25px;
+  }
+  .box1,
+  .box2,
+  .box3 {
+    padding-right: 100px;
+  }
+
+  .shadow1{
+  position: absolute;
+  
+
+  }
+  .shadow2{
+    position: absolute;
+
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    min-width: 100px;
+    padding:30px;
+  }
+  h1{
+margin-left: 0px;
+  }
+  .maintext {
+    width: 100%;
+  }
+  .img2 {
+    display: none;
+  }
+  .flex2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    
+  }
+
+  .flex1 {
+    flex-direction: column;
+  }
+  .img1 {
+    margin-left: 10%;
+    margin-bottom: 30px;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    padding-right: 35px;
+  }
+
+  .shadow2{
+    display: none;
+  }
+
+}
